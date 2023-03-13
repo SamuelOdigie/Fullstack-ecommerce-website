@@ -4,7 +4,7 @@ const fs = require("fs");
 const router = express.Router();
 
 router.post("/", (req, res) => {
-  const cart = require("../data/cart.json");
+  const cart = require("../cart.json");
 
   const { productId, quantity } = req.body;
 
@@ -19,13 +19,13 @@ router.post("/", (req, res) => {
     });
   }
 
-  fs.writeFileSync("./data/cart.json", JSON.stringify(cart, null, 2));
+  fs.writeFileSync("./cart.json", JSON.stringify(cart, null, 2));
 
   res.send(cart);
 });
 
 router.get("/", (req, res) => {
-  const cart = require("../data/cart.json");
+  const cart = require("../cart.json");
   res.send(cart);
 });
 

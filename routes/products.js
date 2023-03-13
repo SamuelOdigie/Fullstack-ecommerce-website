@@ -1,10 +1,10 @@
-const express = require('express');
-const fs = require('fs');
+const express = require("express");
+const fs = require("fs");
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  const products = require('../data/products.json');
+router.get("/", (req, res) => {
+  const products = require("../products.json");
   res.send(products);
 });
 
