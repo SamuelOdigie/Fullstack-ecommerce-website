@@ -22,7 +22,7 @@ app.use(
 
 // CORS middleware
 app.use(function (req, res, next) {
-  const allowedOrigins = ["http://localhost:3000"]; // replace with your frontend app URL
+  const allowedOrigins = ["http://localhost:3000"];
   const origin = req.headers.origin;
   if (allowedOrigins.includes(origin)) {
     res.setHeader("Access-Control-Allow-Origin", origin);
