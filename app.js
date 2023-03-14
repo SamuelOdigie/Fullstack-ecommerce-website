@@ -20,17 +20,27 @@ app.use(
   })
 );
 
+// CORS middleware
+app.use(function (req, res, next) {
+  const allowedOrigins = ["http://localhost:3000"]; // replace with your frontend app URL
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+  }
+  res.header("Access-Control-Allow-Credentials", true);
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
+
 app.use(express.static(__dirname + "/public"));
 
-const db = new sqlite3.Database(
-  "./ecommerce.db",
-  (err) => {
-    if (err) {
-      console.error(err.message);
-    }
-    console.log("Connected to the ecommerce database.");
+const db = new sqlite3.Database("./ecommerce.db", (err) => {
+  if (err) {
+    console.error(err.message);
   }
-);
+  console.log("Connected to the ecommerce database.");
+});
 
 db.serialize(() => {
   db.run(`
@@ -43,9 +53,9 @@ db.serialize(() => {
   `);
 });
 
-app.use("/api/auth", authRouter);
-app.use("/api/cart", cartRouter);
-app.use("/api/products", productsRouter);
+app.use("/auth", authRouter);
+app.use("/cart", cartRouter);
+app.use("/products", productsRouter);
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
