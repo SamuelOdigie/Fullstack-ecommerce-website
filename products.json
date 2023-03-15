@@ -2,44 +2,44 @@
     "products": [
       {
         "id": 1,
-        "name": "Product 1",
+        "name": "Japanese Lantern in the Street of Tokyo Framed Canvas",
         "description": "This is product 1.",
-        "image": "https://via.placeholder.com/150x150",
-        "price": 10
+        "image": "https://ctl.s6img.com/society6/img/So0-wAOMTsO3nXLSW9wb5DTSDOc/w_1500/framed-canvas/16x24/black/sweep/~artwork,fw_2400,fh_3600,iw_2400,ih_3600/s6-original-art-uploads/society6/uploads/misc/1479c58c733042b4b84f32e17c5b7578/~~/big-japanese-lantern-in-the-street-of-tokyo-aesthetic-cyberpunk-style-photography-framed-canvas.jpg",
+        "price": 69.99
       },
       {
         "id": 2,
-        "name": "Product 2",
+        "name": "Cyberpunk Neo Tokyo Framed Canvas",
         "description": "This is product 2.",
-        "image": "https://via.placeholder.com/150",
-        "price": 20
+        "image": "https://ctl.s6img.com/society6/img/pv8nEiYaEcQvg5tZW4qH-3R1uU4/w_700/framed-canvas/8x12/black/sweep/~artwork,fw_2400,fh_3600,iw_2400,ih_3600/s6-original-art-uploads/society6/uploads/misc/74ea5b40f9f44d878893f8eaf4b9487e/~~/cyberpunk-neo-tokyo-framed-canvas.jpg?attempt=0",
+        "price": 59.99
       },
       {
         "id": 3,
-        "name": "Product 3",
+        "name": "Pink City Pop Aesthetic Tokyo Japan Poster Framed Canvas",
         "description": "This is product 3.",
-        "image": "https://via.placeholder.com/150",
-        "price": 30
+        "image": "https://ctl.s6img.com/society6/img/xyFBQG95atuVe9rFpp9mAYT5EVU/w_700/framed-canvas/8x12/walnut/sweep/~artwork,fw_2400,fh_3600,iw_2400,ih_3600/s6-original-art-uploads/society6/uploads/misc/e266f271028847bd8d498ce5c617d330/~~/pink-city-pop-aesthetic-tokyo-japan-poster-framed-canvas.jpg?attempt=0",
+        "price": 99.99
       },
       {
         "id": 4,
-        "name": "Product 4",
+        "name": "Rain over Neo Tokyo Framed Canvas",
         "description": "This is product 4.",
-        "image": "https://via.placeholder.com/150",
-        "price": 30
+        "image": "https://ctl.s6img.com/society6/img/bM5kh91vYYSwnNZtXsxUdv7IsFs/w_700/framed-canvas/12x8/black/sweep/~artwork,fw_3600,fh_2400,iw_3600,ih_2400/s6-original-art-uploads/society6/uploads/misc/4764e958177b4074a5bdd27540c0ab3d/~~/rain-over-neo-tokyo-framed-canvas.jpg?attempt=0",
+        "price": 77.99
       },
       {
         "id": 5,
-        "name": "Product 5",
+        "name": "Akihabara Neon Dream Framed Canvas",
         "description": "This is product 5.",
-        "image": "https://via.placeholder.com/150",
-        "price": 30
+        "image": "https://ctl.s6img.com/society6/img/AI8_y0kuF4uZCOSXSrZbn8DVlCk/w_700/framed-canvas/36x24/walnut/sweep/~artwork,fw_3600,fh_2400,iw_3600,ih_2400/s6-original-art-uploads/society6/uploads/misc/e6466bcbce234d14a2e62cf6732ea013/~~/akihabara-neon-dream-framed-canvas.jpg?attempt=0",
+        "price": 49.99
       },{
         "id": 6,
-        "name": "Product 6",
+        "name": "Small Streets of Shinjuku Framed Canvas",
         "description": "This is product 6.",
-        "image": "https://via.placeholder.com/150",
-        "price": 30
+        "image": "https://ctl.s6img.com/society6/img/vdj9OL4HtvprwJv-glNQp6t6s-M/w_700/framed-canvas/12x8/black/sweep/~artwork,fw_3600,fh_2400,iw_3600,ih_2400/s6-original-art-uploads/society6/uploads/misc/f1de41bc45cf4ef6815a67755166e5f6/~~/small-streets-of-shinjuku-framed-canvas.jpg?attempt=0",
+        "price": 59.99
       }
     ]
   }

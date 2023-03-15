@@ -6,6 +6,7 @@ const sqlite3 = require("sqlite3").verbose();
 const authRouter = require("./routes/auth");
 const cartRouter = require("./routes/cart");
 const productsRouter = require("./routes/products");
+const cors = require("cors"); // Import the cors package
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -20,18 +21,13 @@ app.use(
   })
 );
 
-// CORS middleware
-app.use(function (req, res, next) {
-  const allowedOrigins = ["http://localhost:3000"];
-  const origin = req.headers.origin;
-  if (allowedOrigins.includes(origin)) {
-    res.setHeader("Access-Control-Allow-Origin", origin);
-  }
-  res.header("Access-Control-Allow-Credentials", true);
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
+// Use the cors middleware
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 
 app.use(express.static(__dirname + "/public"));
 
